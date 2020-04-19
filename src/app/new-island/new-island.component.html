@@ -1,0 +1,27 @@
+<div class="container">
+    <h1>Island</h1>
+    <form [formGroup]="newIsland" (ngSubmit)="createIsland($event)">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" formControlName="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="dodoCode">Dodo Code</label>
+        <input type="text" class="form-control" formControlName="code">
+      </div>
+
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input type="number" class="form-control" formControlName="price">
+      </div>
+
+      <div class="form-group">
+        <label for="description">Description</label>
+        <textarea type="text" class="form-control" formControlName="description"></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-success">Submit</button>
+
+    </form>
+</div>

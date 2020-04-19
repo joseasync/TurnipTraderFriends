@@ -1,0 +1,22 @@
+<table class="table table-striped table-dark">
+    <thead >
+      <tr>
+        <th>Island</th>
+        <th class="number-column">Price</th>
+        <th class="number-column">Dodo Code</th>
+        <th class="number-column">Local time</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let island of islandData | async">
+        <td>{{island.name}}</td>
+        <td class="number-column">{{island.price}} Bells</td>
+        <td class="number-column">{{island.code}}</td>
+        <td class="number-column">{{island.date}}</td>
+        <td>{{island.description}}</td>
+        <td><button class="btn btn-primary" type="button" [routerLink]="['islands',island.key]">Enqueue</button></td>
+      </tr>
+    </tbody> 
+  </table> 
+  <button class="btn btn-success" type="button" routerLink="islands/new">New</button>

@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "turniptrader-337c7": {
+      "hosting": {
+        "turnipTrader": [
+          "turniptrader-337c7"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "hosting": [
+    {
+      "target": "turnipTrader",
+      "public": "dist/turnipTrader",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}

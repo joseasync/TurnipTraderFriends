@@ -117,8 +117,16 @@
               "devServerTarget": "turnipTrader:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "turnipTrader"
+    }
+  },
+  "defaultProject": "turnipTrader",
+  "cli": {
+    "analytics": "2a19a3ed-6e59-4e42-bf99-3d296fe880ca"
+  }
 }
