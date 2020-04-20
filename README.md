@@ -1,4 +1,5 @@
 # TurnipTrader
+You can see the project working [>here<](https://turniptrader-337c7.web.app/)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
